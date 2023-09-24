@@ -9,6 +9,6 @@ This project is the final GDSC project which contains a simple clothing ecommerc
 
 For design reference:
 
-- [e-commerce design](https://www.figma.com/community/file/1169625825293818878/ecommerce-clothing-store-mobile-app-design)
+- [eCommerce Clothing Store Design](https://www.figma.com/community/file/1169625825293818878/ecommerce-clothing-store-mobile-app-design)
 
 sorry if it's not optimal, I have tried my best
