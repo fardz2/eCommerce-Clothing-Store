@@ -18,7 +18,7 @@ class RegisterView extends GetView<RegisterController> {
       appBar: AppBar(
         elevation: 0,
         centerTitle: true,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black, //change your color here
         ),
         title: Text(
@@ -71,12 +71,14 @@ class RegisterView extends GetView<RegisterController> {
                       } else {
                         Map<String, dynamic> hasil1 =
                             await authC.login(email.text, password.text);
+
                         if (hasil1["error"] == true) {
                           Get.snackbar("error", hasil["message"]);
                         }
-                        controller.isLoading.value = false;
+
                         Get.offAllNamed(Routes.HOME);
                       }
+                      controller.isLoading.value = false;
                     } else {
                       Get.snackbar("error", "email dan password harus diisi");
                     }

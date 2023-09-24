@@ -77,7 +77,7 @@ class LoginView extends GetView<LoginController> {
                     : const Text("Login"))),
             ElevatedButton(
                 onPressed: () => Get.toNamed("/register"),
-                child: Text("register"))
+                child: const Text("register"))
           ],
         ),
       ),
